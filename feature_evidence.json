@@ -2,11 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-dedicated-sitemap-route-or-modal-drawer-accessible-from-the-footer-or-navbar-that-renders-a-visual-human-readable-sitemap-listing-all-page-sections-home-products-offers-about-why-choose-us-reviews-and-contact-each-as-a-clickable-anchor-that-smooth-scrolls-to-the-corresponding-section",
-      "featureTitle": "Create a dedicated '/sitemap' route (or modal/drawer accessible from the footer or navbar) that renders a visual, human-readable sitemap listing all page sections: Home, Products, Offers, About, Why Choose Us, Reviews, and Contact — each as a clickable anchor that smooth-scrolls to the corresponding section.",
+      "featureId": "feature-add-the-google-search-console-verification-meta-tag-meta-name-google-site-verification-content-nxnhepzvmae0ar1cmkzoveexiirtvi6zdda6igoxmu0-inside-the-head-element-of-frontend-index-html",
+      "featureTitle": "Add the Google Search Console verification meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` inside the `<head>` element of `frontend/index.html`.",
       "files": [
-        "frontend/src/components/Footer.tsx",
-        "frontend/src/components/Sitemap.tsx"
+        "frontend/index.html"
       ],
       "components": [
         "core-infrastructure@1.0.2",

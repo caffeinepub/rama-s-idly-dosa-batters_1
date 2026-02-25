@@ -1,11 +1,9 @@
 # Specification
 
 ## Summary
-**Goal:** Add a visual, human-readable sitemap page to help developers and users navigate all sections of the site.
+**Goal:** Add a Google Search Console verification meta tag to the site's HTML head for site ownership verification.
 
 **Planned changes:**
-- Add a `/sitemap` route that renders a visual sitemap listing all page sections: Home, Products, Offers, About, Why Choose Us, Reviews, and Contact
-- Each entry is a clickable link that smooth-scrolls to the corresponding section on the main page
-- Add a link to the sitemap in the footer navigation
+- Add `<meta name="google-site-verification" content="nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0" />` inside the `<head>` element of `frontend/index.html`
 
-**User-visible outcome:** Users and developers can visit `/sitemap` (linked from the footer) to see all page sections listed and click any entry to navigate directly to that section on the main page.
+**User-visible outcome:** Google Search Console can successfully verify ownership of the Rama's Home Foods website using the verification meta tag.

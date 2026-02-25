@@ -1,32 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add developer sitemap / site navigation reference",
+  "title": "Add Google Search Console verification meta tag",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Create a dedicated '/sitemap' route or modal accessible from the footer that renders a visual, human-readable sitemap listing all page sections with clickable smooth-scroll anchors.",
+      "summary": "Add Google Search Console verification meta tag to frontend/index.html",
       "acceptanceCriteria": [
-        "All seven sections (Home, Products, Offers, About, Why Choose Us, Reviews, Contact) are listed in the sitemap view.",
-        "Each entry is a clickable link that navigates/scrolls to the corresponding section on the main page.",
-        "The sitemap view is accessible from the footer navigation links.",
-        "The sitemap renders correctly on both desktop and mobile viewports."
+        "The meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` is present in the `<head>` section of `frontend/index.html`.",
+        "No existing meta tags or SEO elements in `frontend/index.html` are removed or altered.",
+        "Google Search Console can successfully verify ownership of the site using this tag."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Sitemap.tsx",
-          "operation": "create",
-          "description": "Create a new Sitemap component that renders a visual, human-readable sitemap listing all seven page sections (Home, Products, Offers, About, Why Choose Us, Reviews, Contact). Each section entry should be a clickable anchor that smooth-scrolls to the corresponding section on the main page using section IDs. Style the component to match the existing warm spice/terracotta design system defined in frontend/src/index.css. Ensure the layout is responsive and works on both desktop and mobile viewports. The component should accept an optional onNavigate callback prop to support closing a modal/drawer after navigation."
-        },
-        {
-          "path": "frontend/src/components/Footer.tsx",
+          "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Add a new 'Sitemap' link to the quick navigation section of the footer that opens the sitemap view. The link should trigger a modal or drawer overlay displaying the Sitemap component. Ensure the modal/drawer is accessible, includes a close button, and follows the existing design patterns. On mobile viewports, consider using a drawer from the bottom or side. After clicking any sitemap section link, close the modal/drawer and smooth-scroll to the target section."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Ensure all main page sections (Hero for Home, Products, Offers, AboutUs for About, WhyChooseUs for Why Choose Us, Reviews, Contact) have stable, unique IDs that match the anchor targets used in the Sitemap component. If any sections lack IDs or use inconsistent naming, update them to use kebab-case IDs (e.g., 'home', 'products', 'offers', 'about', 'why-choose-us', 'reviews', 'contact'). Verify that the smooth-scroll behavior works consistently when navigating from the sitemap."
+          "description": "Add the Google Search Console verification meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` inside the `<head>` element. Insert it after existing meta tags but before the `<title>` element. Do not remove or modify any existing meta tags, structured data, or SEO elements. The verification tag must use the exact content value: nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0"
         }
       ]
     }

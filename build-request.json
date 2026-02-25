@@ -1,39 +1,36 @@
 {
   "kind": "build_request",
-  "title": "Add developer sitemap / site navigation reference",
+  "title": "Add Google Search Console verification meta tag",
   "projectName": "Rama's Home Foods",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "Create a dedicated '/sitemap' route (or modal/drawer accessible from the footer or navbar) that renders a visual, human-readable sitemap listing all page sections: Home, Products, Offers, About, Why Choose Us, Reviews, and Contact — each as a clickable anchor that smooth-scrolls to the corresponding section.",
+      "text": "Add the Google Search Console verification meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` inside the `<head>` element of `frontend/index.html`.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-4"
         ],
         "quotes": [
-          "Add sitemap for my process easier"
+          "<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />"
         ]
       },
       "acceptanceCriteria": [
-        "All seven sections (Home, Products, Offers, About, Why Choose Us, Reviews, Contact) are listed in the sitemap view.",
-        "Each entry is a clickable link that navigates/scrolls to the corresponding section on the main page.",
-        "The sitemap view is accessible from the footer navigation links.",
-        "The sitemap renders correctly on both desktop and mobile viewports."
+        "The meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` is present in the `<head>` section of `frontend/index.html`.",
+        "No existing meta tags or SEO elements in `frontend/index.html` are removed or altered.",
+        "Google Search Console can successfully verify ownership of the site using this tag."
       ]
     }
   ],
   "constraints": [
-    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui.",
-    "The existing frontend/public/sitemap.xml and frontend/public/robots.txt must remain unchanged.",
-    "The sitemap link tag already present in frontend/index.html must not be removed."
+    "Do not remove or modify any existing meta tags, structured data, or SEO elements in frontend/index.html.",
+    "The verification tag must use the exact content value: nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0"
   ],
   "nonGoals": [
-    "Modifying the backend or any Motoko code.",
-    "Regenerating or replacing the existing XML sitemap (frontend/public/sitemap.xml).",
-    "Adding new pages or sections beyond those already in the app.",
-    "Any SEO changes beyond what is needed for the visual sitemap page."
+    "Changes to robots.txt or sitemap.xml",
+    "Any backend changes",
+    "Any visual or UI changes"
   ],
   "imageRequirements": {
     "required": [],

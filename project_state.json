@@ -1,14 +1,16 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "New project",
-  "architectural_notes": [],
+  "summary": "Web project with sitemap and Google Search Console verification meta tag integration.",
+  "architectural_notes": [
+    "Google site verification meta tag: <meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" /> should be placed in <head>"
+  ],
   "known_issues": [],
   "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-create-a-dedicated-sitemap-route-or-modal-drawer-accessible-from-the-footer-or-navbar-that-renders-a-visual-human-readable-sitemap-listing-all-page-sections-home-products-offers-about-why-choose-us-reviews-and-contact-each-as-a-clickable-anchor-that-smooth-scrolls-to-the-corresponding-section",
-      "title": "Create a dedicated '/sitemap' route (or modal/drawer accessible from the footer or navbar) that renders a visual, human-readable sitemap listing all page sections: Home, Products, Offers, About, Why Choose Us, Reviews, and Contact — each as a clickable anchor that smooth-scrolls to the corresponding section.",
+      "id": "feature-add-the-google-search-console-verification-meta-tag-meta-name-google-site-verification-content-nxnhepzvmae0ar1cmkzoveexiirtvi6zdda6igoxmu0-inside-the-head-element-of-frontend-index-html",
+      "title": "Add the Google Search Console verification meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` inside the `<head>` element of `frontend/index.html`.",
       "reqIds": [
         "REQ-1"
       ],
@@ -18,11 +20,12 @@
   "new_feature_requests": [
     {
       "id": "AR-1",
-      "summary": "Add sitemap to make the process easier",
+      "summary": "Add Google Search Console verification meta tag to site head",
       "reqIds": [],
       "status": "pending"
     }
   ],
+  "gameProjectType": "none",
   "projectName": "Rama's Home Foods",
   "clarification_mode": "instant",
   "clarification_rounds": 0
