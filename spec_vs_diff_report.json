@@ -1,0 +1,26 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T04:45:54.710Z",
+  "summary": "The diff implements a comprehensive visual theme refresh across all required components. Colors, typography, spacing, and decorative styling have been updated with a cohesive warm spice/terracotta palette (burgundy, saffron, cream) and Playfair Display/DM Sans typography system. All content, links, images, basket functionality, and navigation structure appear preserved. The implementation covers all 11 listed components. No files in frontend/src/hooks/ or frontend/src/main.tsx were modified.",
+  "missing_requirements": [],
+  "hallucinated_features": [],
+  "confidence": 0.88,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/AboutUs.tsx",
+    "frontend/src/components/BasketSummary.tsx",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/components/FloatingWhatsAppButton.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/Offers.tsx",
+    "frontend/src/components/Products.tsx",
+    "frontend/src/components/Reviews.tsx",
+    "frontend/src/components/WhyChooseUs.tsx",
+    "frontend/src/index.css",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

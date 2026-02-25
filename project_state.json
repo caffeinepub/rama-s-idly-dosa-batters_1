@@ -1,0 +1,413 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 21,
+  "summary": "Professional website for Rama's Idly & Dosa Batters in Vijayawada with traditional South Indian theme. Features dark green, saffron/orange, and cream color scheme. Includes sections: Home (hero with tagline 'Authentic Home Made Taste'), About Us, Products (Idly, Dosa, Vada, Ragi Dosa, Ragi Idly Batters with pricing and Add to Basket functionality), Why Choose Us, Offers (Sunday Special: Buy 2kg of any batter get 1/2kg free; Bulk Order; First Order Free), Customer Reviews, and Contact. WhatsApp ordering (+91-8143497999) with basket/quantity-based order messages, floating WhatsApp button, Sunday Special banner, Google Maps with real link, real business address, company logo (transparent background, symbol only), actual product images, and Zomato Partner App link (https://zomato.onelink.me/xqzv/v2xa8r5r) for online orders. Mobile-responsive navbar. Full vintage/traditional South Indian aesthetic with round logo design.",
+  "architectural_notes": [
+    "Single-page HTML website with CSS custom properties for theming (dark-green, saffron, gold, cream)",
+    "WhatsApp integration uses wa.me links with pre-filled messages for ordering",
+    "Mobile-responsive with hamburger menu; breakpoints at 900px, 768px, 480px",
+    "Real business address: 21-9-222 Madhura Nagar Railway Station, Main Rd, Saibaba Colony, cross, Vijayawada, Andhra Pradesh 520011",
+    "Google Maps shared link provided by user: https://share.google/dO9azSt3yVlwXZjsN",
+    "Basket/cart state tracks product quantities; WhatsApp order message is dynamically generated with item names, quantities, and total price"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-react-website-with-a-sticky-mobile-responsive-navbar-containing-links-to-sections-home-about-us-our-products-why-choose-us-offers-reviews-and-contact-apply-a-traditional-south-indian-visual-theme-using-dark-green-1b4332-or-similar-saffron-orange-e8620a-or-similar-and-a-cream-off-white-background-fdf6ec-or-similar-use-warm-elegant-typography-serif-for-headings-clean-sans-serif-for-body-the-nav-should-collapse-into-a-hamburger-menu-on-mobile",
+      "title": "Create a single-page React website with a sticky mobile-responsive navbar containing links to sections: Home, About Us, Our Products, Why Choose Us, Offers, Reviews, and Contact. Apply a traditional South Indian visual theme using dark green (#1B4332 or similar), saffron/orange (#E8620A or similar), and a cream/off-white background (#FDF6EC or similar). Use warm, elegant typography (serif for headings, clean sans-serif for body). The nav should collapse into a hamburger menu on mobile.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-full-width-hero-section-as-the-homepage-with-the-business-name-rama-s-idly-dosa-batters-subtitle-fresh-hygienic-authentic-and-tagline-authentic-home-made-taste-display-the-generated-hero-background-image-hero-bg-dim-1440x800-png-include-a-prominent-order-on-whatsapp-cta-button-that-opens-https-wa-me-918143497999-in-a-new-tab",
+      "title": "Build a full-width Hero section as the homepage with the business name 'Rama's Idly & Dosa Batters', subtitle 'Fresh • Hygienic • Authentic', and tagline 'Authentic Home Made Taste'. Display the generated hero background image (hero-bg.dim_1440x800.png). Include a prominent 'Order on WhatsApp' CTA button that opens https://wa.me/918143497999 in a new tab.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-about-us-section-with-a-decorative-south-indian-pattern-divider-the-business-description-rama-s-idly-dosa-batters-brings-traditional-south-indian-taste-to-every-home-in-vijayawada-we-prepare-fresh-naturally-fermented-batter-using-premium-ingredients-to-ensure-soft-idlis-and-crispy-dosas-and-vada-batters-display-the-generated-about-batter-preparation-dim-600x400-png-image-alongside-the-text-highlight-key-values-fresh-natural-hygienic-authentic-as-icon-text-cards",
+      "title": "Build an 'About Us' section with a decorative South Indian pattern divider, the business description: 'Rama's Idly & Dosa Batters brings traditional South Indian taste to every home in Vijayawada. We prepare fresh, naturally fermented batter using premium ingredients to ensure soft idlis and crispy dosas and Vada Batters.' Display the generated about-batter-preparation.dim_600x400.png image alongside the text. Highlight key values (Fresh, Natural, Hygienic, Authentic) as icon+text cards.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-our-products-section-displaying-5-product-cards-idly-batter-dosa-batter-vada-batter-ragi-dosa-batter-and-ragi-idly-batter-each-card-should-show-a-product-image-product-name-a-short-1-2-sentence-description-and-an-order-now-button-linking-to-whatsapp-https-wa-me-918143497999-use-generated-images-idly-batter-dim-400x300-png-dosa-batter-dim-400x300-png-vada-batter-dim-400x300-png-ragi-dosa-batter-dim-400x300-png-ragi-idly-batter-dim-400x300-png-cards-should-display-in-a-responsive-grid-3-columns-desktop-2-tablet-1-mobile",
+      "title": "Build an 'Our Products' section displaying 5 product cards: Idly Batter, Dosa Batter, Vada Batter, Ragi Dosa Batter, and Ragi Idly Batter. Each card should show a product image, product name, a short 1-2 sentence description, and an 'Order Now' button linking to WhatsApp (https://wa.me/918143497999). Use generated images: idly-batter.dim_400x300.png, dosa-batter.dim_400x300.png, vada-batter.dim_400x300.png, ragi-dosa-batter.dim_400x300.png, ragi-idly-batter.dim_400x300.png. Cards should display in a responsive grid (3 columns desktop, 2 tablet, 1 mobile).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-why-choose-us-section-with-4-6-feature-highlights-such-as-100-natural-ingredients-traditionally-fermented-no-preservatives-freshly-prepared-daily-home-delivery-available-and-made-with-hygiene-care-each-feature-should-use-an-icon-and-a-short-description-use-a-decorative-saffron-green-background-strip-or-pattern-for-visual-distinction",
+      "title": "Build a 'Why Choose Us' section with 4–6 feature highlights such as: 100% Natural Ingredients, Traditionally Fermented, No Preservatives, Freshly Prepared Daily, Home Delivery Available, and Made with Hygiene & Care. Each feature should use an icon and a short description. Use a decorative saffron/green background strip or pattern for visual distinction.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-offers-section-with-a-prominent-animated-sunday-special-offer-banner-e-g-a-pulsing-saffron-gold-banner-and-at-least-2-additional-offer-cards-such-as-bulk-order-discount-and-first-order-free-the-sunday-special-banner-should-be-eye-catching-with-bold-text-use-the-generated-sunday-special-banner-dim-1200x300-png-image-as-the-banner-background",
+      "title": "Build an 'Offers' section with a prominent animated 'Sunday Special Offer' banner (e.g., a pulsing saffron/gold banner) and at least 2 additional offer cards such as 'Bulk Order Discount' and 'First Order Free'. The Sunday Special banner should be eye-catching with bold text. Use the generated sunday-special-banner.dim_1200x300.png image as the banner background.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-customer-reviews-section-showing-4-testimonial-cards-with-customer-name-star-rating-1-5-stars-and-review-text-use-placeholder-realistic-south-indian-customer-names-and-review-content-praising-the-batter-quality-display-in-a-horizontal-scrollable-row-on-mobile-and-a-2-column-or-4-column-grid-on-desktop-style-cards-with-a-cream-background-saffron-star-icons-and-a-subtle-green-border",
+      "title": "Build a 'Customer Reviews' section showing 4 testimonial cards with customer name, star rating (1–5 stars), and review text. Use placeholder realistic South Indian customer names and review content praising the batter quality. Display in a horizontal scrollable row on mobile and a 2-column or 4-column grid on desktop. Style cards with a cream background, saffron star icons, and a subtle green border.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-contact-section-displaying-location-vijayawada-phone-91-8143497999-and-91-9296708629-whatsapp-91-8143497999-embed-a-google-maps-iframe-for-vijayawada-use-coordinates-16-5062-n-80-6480-e-as-center-with-zoom-14-as-a-placeholder-that-can-be-replaced-with-a-specific-address-embed-later-include-a-send-message-on-whatsapp-button-linking-to-https-wa-me-918143497999-layout-should-be-two-column-contact-info-on-left-map-on-right-stacked-on-mobile",
+      "title": "Build a 'Contact' section displaying: Location: Vijayawada, Phone: +91-8143497999 and +91-9296708629, WhatsApp: +91-8143497999. Embed a Google Maps iframe for Vijayawada (use coordinates 16.5062° N, 80.6480° E as center with zoom 14) as a placeholder that can be replaced with a specific address embed later. Include a 'Send Message on WhatsApp' button linking to https://wa.me/918143497999. Layout should be two-column: contact info on left, map on right (stacked on mobile).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-floating-whatsapp-button-fixed-to-the-bottom-right-corner-of-every-page-the-button-should-display-the-whatsapp-icon-in-green-and-open-https-wa-me-918143497999-in-a-new-tab-on-click-include-a-subtle-pulse-animation-and-a-tooltip-order-on-whatsapp-the-button-must-remain-visible-above-all-other-content-high-z-index-on-all-screen-sizes",
+      "title": "Add a floating WhatsApp button fixed to the bottom-right corner of every page. The button should display the WhatsApp icon in green and open https://wa.me/918143497999 in a new tab on click. Include a subtle pulse animation and a tooltip 'Order on WhatsApp'. The button must remain visible above all other content (high z-index) on all screen sizes.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-footer-with-the-business-name-rama-s-idly-dosa-batters-tagline-authentic-home-made-taste-quick-navigation-links-contact-info-and-a-copyright-notice-style-in-dark-green-background-with-cream-white-text-and-saffron-accents",
+      "title": "Add a footer with the business name 'Rama's Idly & Dosa Batters', tagline 'Authentic Home Made Taste', quick navigation links, contact info, and a copyright notice. Style in dark green background with cream/white text and saffron accents.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-section-to-display-the-full-business-address-21-9-222-madhura-nagar-railway-station-main-rd-saibaba-colony-cross-vijayawada-andhra-pradesh-520011-replace-the-generic-vijayawada-location-text-with-this-complete-address-in-the-contact-info-card-and-in-the-footer-component",
+      "title": "Update the Contact section to display the full business address: '21-9-222 Madhura Nagar Railway Station, Main Rd, Saibaba Colony, cross, Vijayawada, Andhra Pradesh 520011'. Replace the generic 'Vijayawada' location text with this complete address in the contact info card and in the Footer component.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-placeholder-google-maps-iframe-in-the-contact-section-with-an-embed-using-the-real-google-maps-shared-link-https-share-google-do9azst3yvlwxzjsn-use-this-url-as-the-src-of-the-iframe-or-convert-it-to-an-embeddable-maps-url-pointing-to-the-same-location-so-the-map-shows-the-actual-business-location",
+      "title": "Replace the placeholder Google Maps iframe in the Contact section with an embed using the real Google Maps shared link https://share.google/dO9azSt3yVlwXZjsN. Use this URL as the src of the iframe (or convert it to an embeddable maps URL pointing to the same location) so the map shows the actual business location.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-company-logo-image-company-logo-dim-300x300-png-sourced-from-the-uploaded-file-file-00000000ebdc7207bcc92157f7dcfe54-1-png-the-illustrated-south-indian-grandmother-grinding-batter-with-rama-s-idly-and-dosa-batters-text-to-the-navbar-component-displayed-to-the-left-of-the-brand-name-text-also-display-it-in-the-hero-section-above-or-alongside-the-business-name-heading-use-the-image-from-frontend-public-assets-generated-company-logo-dim-300x300-png",
+      "title": "Add the company logo image (company-logo.dim_300x300.png, sourced from the uploaded file 'file_00000000ebdc7207bcc92157f7dcfe54 (1).png' — the illustrated South Indian grandmother grinding batter with 'Rama's Idly And Dosa Batters' text) to the Navbar component, displayed to the left of the brand name text. Also display it in the Hero section above or alongside the business name heading. Use the image from frontend/public/assets/generated/company-logo.dim_300x300.png.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-generated-placeholder-product-images-in-the-products-section-with-the-actual-user-provided-product-images-use-product-hero-1-dim-800x600-png-from-img-20260214-163915-jpg-rama-s-branded-batter-packets-with-festive-south-indian-kitchen-backdrop-for-the-idly-batter-card-product-batter-pot-dim-600x600-png-from-file-0000000015587208903e4f167b58b088-png-clay-pot-with-batter-and-rama-s-delivery-bag-for-the-dosa-batter-card-product-packets-idly-dosa-dim-800x600-png-from-file-000000003e6872069c84d7b25a2a9974-1-png-two-rama-s-batter-packets-with-idly-and-dosa-for-the-vada-batter-card-product-hero-2-dim-800x600-png-from-1768416241963-jpg-rama-s-batter-packets-in-rustic-south-indian-kitchen-setting-for-the-ragi-dosa-batter-card-the-ragi-idly-batter-card-may-reuse-one-of-the-above-images-product-hero-1-dim-800x600-png-all-images-served-from-frontend-public-assets-generated",
+      "title": "Replace the generated placeholder product images in the Products section with the actual user-provided product images. Use: product-hero-1.dim_800x600.png (from IMG_20260214_163915.jpg — Rama's branded batter packets with festive South Indian kitchen backdrop) for the Idly Batter card; product-batter-pot.dim_600x600.png (from file_0000000015587208903e4f167b58b088.png — clay pot with batter and Rama's delivery bag) for the Dosa Batter card; product-packets-idly-dosa.dim_800x600.png (from file_000000003e6872069c84d7b25a2a9974 (1).png — two Rama's batter packets with idly and dosa) for the Vada Batter card; product-hero-2.dim_800x600.png (from 1768416241963.jpg — Rama's batter packets in rustic South Indian kitchen setting) for the Ragi Dosa Batter card. The Ragi Idly Batter card may reuse one of the above images (product-hero-1.dim_800x600.png). All images served from frontend/public/assets/generated/.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-company-logo-image-currently-used-in-the-navbar-and-hero-section-with-the-new-user-provided-logo-file-000000005cf472088e0c446671034781-png-illustrated-south-indian-grandmother-grinding-batter-with-rama-s-idly-and-dosa-batters-and-authentic-home-made-taste-text-on-a-cream-circular-background-save-it-as-company-logo-dim-300x300-png-in-frontend-public-assets-generated-and-update-all-references-in-navbar-tsx-and-hero-tsx-to-use-this-new-file-do-not-alter-the-logo-image-in-any-way-display-it-as-is",
+      "title": "Replace the existing company logo image currently used in the Navbar and Hero section with the new user-provided logo (file_000000005cf472088e0c446671034781.png — illustrated South Indian grandmother grinding batter with 'Rama's Idly And Dosa Batters' and 'Authentic Home Made Taste' text on a cream circular background). Save it as company-logo.dim_300x300.png in frontend/public/assets/generated/ and update all references in Navbar.tsx and Hero.tsx to use this new file. Do not alter the logo image in any way — display it as-is.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-vada-batter-product-card-image-in-the-products-section-with-the-user-provided-image-file-00000000dd7c71fab17763813c073305-png-two-rama-s-branded-batter-packets-on-a-kitchen-counter-one-showing-ragi-idly-balls-and-one-showing-vada-rings-save-it-as-product-vada-batter-dim-800x600-png-in-frontend-public-assets-generated-and-update-the-vada-batter-card-in-products-tsx-to-use-this-new-image",
+      "title": "Replace the Vada Batter product card image in the Products section with the user-provided image (file_00000000dd7c71fab17763813c073305.png — two Rama's branded batter packets on a kitchen counter, one showing ragi idly balls and one showing vada rings). Save it as product-vada-batter.dim_800x600.png in frontend/public/assets/generated/ and update the Vada Batter card in Products.tsx to use this new image.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-pricing-information-to-each-product-card-in-the-products-section-display-the-price-prominently-on-each-card-idly-batter-45-1-kg-dosa-batter-45-1-kg-vada-batter-100-1-kg-ragi-idly-batter-60-1-kg-ragi-dosa-batter-60-1-kg-style-the-price-using-saffron-orange-color-to-make-it-visually-prominent",
+      "title": "Add pricing information to each product card in the Products section. Display the price prominently on each card: Idly Batter — ₹45 / 1 kg; Dosa Batter — ₹45 / 1 kg; Vada Batter — ₹100 / 1 kg; Ragi Idly Batter — ₹60 / 1 kg; Ragi Dosa Batter — ₹60 / 1 kg. Style the price using saffron/orange color to make it visually prominent.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-add-to-basket-button-with-a-quantity-selector-increment-decrement-minimum-1-kg-to-each-product-card-in-the-products-section-implement-a-floating-sticky-basket-summary-that-shows-selected-items-and-total-price-add-an-order-via-whatsapp-button-in-the-basket-that-when-clicked-opens-a-pre-filled-whatsapp-message-to-91-8143497999-https-wa-me-918143497999-listing-each-product-its-selected-quantity-in-kg-individual-price-and-the-total-order-amount-the-basket-state-should-be-managed-in-react-component-state-no-backend-needed-the-basket-should-be-clearable-after-sending-the-order",
+      "title": "Add an 'Add to Basket' button with a quantity selector (increment/decrement, minimum 1 kg) to each product card in the Products section. Implement a floating/sticky basket summary that shows selected items and total price. Add an 'Order via WhatsApp' button in the basket that, when clicked, opens a pre-filled WhatsApp message to +91-8143497999 (https://wa.me/918143497999) listing each product, its selected quantity in kg, individual price, and the total order amount. The basket state should be managed in React component state (no backend needed). The basket should be clearable after sending the order.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-zomato-online-ordering-section-or-prominent-call-to-action-to-the-website-display-a-order-online-via-zomato-button-or-banner-that-links-to-https-zomato-onelink-me-xqzv-v2xa8r5r-in-a-new-tab-this-can-be-placed-in-the-offers-section-as-a-separate-online-orders-section-or-as-a-prominent-banner-use-the-zomato-brand-color-red-for-the-button-banner-also-add-a-zomato-order-link-in-the-footer-alongside-the-whatsapp-ordering-option",
+      "title": "Add a Zomato online ordering section or prominent call-to-action to the website. Display a 'Order Online via Zomato' button or banner that links to https://zomato.onelink.me/xqzv/v2xa8r5r in a new tab. This can be placed in the Offers section, as a separate 'Online Orders' section, or as a prominent banner. Use the Zomato brand color (red) for the button/banner. Also add a Zomato order link in the Footer alongside the WhatsApp ordering option.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-company-logo-in-navbar-tsx-and-hero-tsx-with-the-newly-uploaded-logo-file-00000000ebdc7207bcc92157f7dcfe54-png-illustrated-south-indian-grandmother-grinding-batter-with-temple-banana-leaves-idli-dosa-diyas-and-rama-s-idly-and-dosa-batters-authentic-home-made-taste-text-save-it-as-company-logo-dim-300x300-png-in-frontend-public-assets-generated-the-logo-must-be-displayed-with-no-background-colour-use-css-to-remove-hide-the-cream-background-e-g-mix-blend-mode-multiply-or-set-background-to-transparent-so-only-the-illustrated-symbol-and-text-appear-against-the-site-s-own-background-update-all-logo-references-in-navbar-tsx-and-hero-tsx",
+      "title": "Replace the current company logo in Navbar.tsx and Hero.tsx with the newly uploaded logo (file_00000000ebdc7207bcc92157f7dcfe54.png — illustrated South Indian grandmother grinding batter with temple, banana leaves, idli/dosa, diyas, and 'Rama's Idly And Dosa Batters / Authentic Home Made Taste' text). Save it as company-logo.dim_300x300.png in frontend/public/assets/generated/. The logo must be displayed with NO background colour — use CSS to remove/hide the cream background (e.g., mix-blend-mode: multiply, or set background to transparent) so only the illustrated symbol and text appear against the site's own background. Update all logo references in Navbar.tsx and Hero.tsx.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-sunday-special-offer-in-the-offers-section-offers-tsx-to-display-the-new-promotional-text-buy-2-kg-of-any-batter-and-get-kg-batter-absolutely-free-replace-any-previous-sunday-special-copy-with-this-updated-offer-make-the-kg-free-part-visually-prominent-e-g-large-saffron-gold-bold-text-the-animated-pulsing-banner-style-should-be-retained",
+      "title": "Update the Sunday Special offer in the Offers section (Offers.tsx) to display the new promotional text: 'Buy 2 kg of any batter and get ½ kg batter absolutely FREE!' Replace any previous Sunday Special copy with this updated offer. Make the '½ kg FREE' part visually prominent (e.g., large saffron/gold bold text). The animated/pulsing banner style should be retained.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-overall-website-with-a-deeper-more-authentic-traditional-south-indian-visual-style-throughout-all-sections-enhance-the-visual-theme-by-using-richer-earthy-textures-or-subtle-kolam-rangoli-inspired-patterns-as-section-dividers-or-backgrounds-adding-banana-leaf-motif-accents-in-the-about-us-and-why-choose-us-sections-using-temple-arch-or-lotus-decorative-borders-on-section-headings-deepening-the-color-palette-towards-terracotta-turmeric-gold-and-forest-green-tones-where-appropriate-while-keeping-the-existing-dark-green-1b4332-saffron-e8620a-and-cream-fdf6ec-as-primary-brand-colors-using-more-prominent-playfair-display-noto-serif-typography-for-section-headings-to-feel-warm-and-artisanal-ensuring-the-hero-products-offers-and-footer-all-carry-a-cohesive-traditional-handcrafted-south-indian-restaurant-food-brand-aesthetic",
+      "title": "Redesign the overall website with a deeper, more authentic traditional South Indian visual style throughout all sections. Enhance the visual theme by: using richer earthy textures or subtle kolam/rangoli-inspired patterns as section dividers or backgrounds; adding banana leaf motif accents in the About Us and Why Choose Us sections; using temple-arch or lotus decorative borders on section headings; deepening the color palette towards terracotta, turmeric gold, and forest green tones where appropriate while keeping the existing dark green (#1B4332), saffron (#E8620A), and cream (#FDF6EC) as primary brand colors; using more prominent Playfair Display / Noto Serif typography for section headings to feel warm and artisanal; ensuring the hero, products, offers, and footer all carry a cohesive traditional handcrafted South Indian restaurant/food brand aesthetic.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-a-new-round-circular-company-logo-for-rama-s-idly-dosa-batters-with-a-vintage-traditional-south-indian-aesthetic-the-logo-should-be-circular-in-shape-not-square-featuring-the-illustrated-south-indian-grandmother-grinding-batter-at-the-centre-surrounded-by-traditional-motifs-lotus-kolam-dots-banana-leaves-temple-arch-or-mandala-border-ring-include-the-brand-name-rama-s-idly-dosa-batters-and-tagline-authentic-home-made-taste-in-an-arc-or-circular-text-arrangement-use-the-existing-brand-palette-dark-green-1b4332-saffron-e8620a-turmeric-gold-and-cream-fdf6ec-the-logo-must-have-a-transparent-background-save-as-company-logo-round-dim-400x400-png-in-frontend-public-assets-generated-and-update-all-logo-img-references-in-navbar-tsx-and-hero-tsx-to-use-this-new-file",
+      "title": "Generate a new round/circular company logo for 'Rama's Idly & Dosa Batters' with a vintage traditional South Indian aesthetic. The logo should be circular in shape (not square), featuring the illustrated South Indian grandmother grinding batter at the centre, surrounded by traditional motifs (lotus, kolam dots, banana leaves, temple arch, or mandala border ring). Include the brand name 'Rama's Idly & Dosa Batters' and tagline 'Authentic Home Made Taste' in an arc or circular text arrangement. Use the existing brand palette: dark green (#1B4332), saffron (#E8620A), turmeric gold, and cream (#FDF6EC). The logo must have a transparent background. Save as company-logo-round.dim_400x400.png in frontend/public/assets/generated/ and update all logo <img> references in Navbar.tsx and Hero.tsx to use this new file.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-entire-website-with-a-full-vintage-traditional-south-indian-visual-theme-across-all-sections-and-components-apply-the-following-changes-comprehensively-1-typography-use-playfair-display-or-noto-serif-for-all-section-headings-with-aged-artisanal-letter-spacing-use-warm-serif-body-fonts-where-appropriate-2-color-palette-deepen-to-aged-parchment-f5edd6-antique-cream-fdf6ec-forest-green-1b4332-terracotta-c0522a-turmeric-gold-d4a017-and-saffron-e8620a-as-the-full-palette-3-backgrounds-use-subtle-aged-paper-parchment-texture-as-the-default-section-background-add-faint-kolam-rangoli-dot-grid-or-floral-watermark-patterns-on-alternate-sections-4-decorative-elements-add-temple-arch-or-lotus-svg-borders-above-and-below-each-section-heading-use-banana-leaf-divider-illustrations-between-major-sections-use-mandala-or-rangoli-corner-motifs-on-cards-and-banners-5-navbar-give-the-navbar-a-dark-forest-green-background-with-saffron-gold-border-at-the-bottom-vintage-serif-brand-name-and-gold-tinted-nav-links-6-hero-overlay-a-warm-amber-sepia-gradient-tint-on-the-hero-background-image-style-the-tagline-in-an-ornate-vintage-serif-7-products-section-give-product-cards-an-aged-parchment-background-terracotta-border-lotus-corner-motifs-and-a-vintage-label-style-for-the-price-badge-8-why-choose-us-use-a-deep-forest-green-background-with-gold-icon-badges-and-subtle-kolam-dot-pattern-9-offers-section-style-all-offer-cards-and-the-sunday-special-banner-with-vintage-festive-south-indian-aesthetics-gold-borders-temple-arch-top-aged-paper-feel-10-reviews-section-use-an-aged-cream-card-background-with-saffron-star-icons-and-a-terracotta-gold-ornamental-border-11-footer-deep-forest-green-background-with-turmeric-gold-text-accents-saffron-dividers-and-a-decorative-kolam-rangoli-footer-motif-12-floating-whatsapp-button-retain-existing-functionality-but-restyle-with-a-vintage-green-tone-consistent-with-the-new-palette-all-existing-content-links-pricing-basket-functionality-and-whatsapp-zomato-integrations-must-be-fully-preserved",
+      "title": "Redesign the entire website with a full vintage traditional South Indian visual theme across all sections and components. Apply the following changes comprehensively: (1) Typography — use Playfair Display or Noto Serif for all section headings with aged, artisanal letter-spacing; use warm serif body fonts where appropriate; (2) Color palette — deepen to aged parchment (#F5EDD6), antique cream (#FDF6EC), forest green (#1B4332), terracotta (#C0522A), turmeric gold (#D4A017), and saffron (#E8620A) as the full palette; (3) Backgrounds — use subtle aged paper / parchment texture as the default section background; add faint kolam/rangoli dot-grid or floral watermark patterns on alternate sections; (4) Decorative elements — add temple-arch or lotus SVG borders above and below each section heading; use banana leaf divider illustrations between major sections; use mandala or rangoli corner motifs on cards and banners; (5) Navbar — give the navbar a dark forest-green background with saffron/gold border at the bottom, vintage serif brand name, and gold-tinted nav links; (6) Hero — overlay a warm amber/sepia gradient tint on the hero background image; style the tagline in an ornate vintage serif; (7) Products section — give product cards an aged-parchment background, terracotta border, lotus corner motifs, and a vintage label style for the price badge; (8) Why Choose Us — use a deep forest-green background with gold icon badges and subtle kolam dot pattern; (9) Offers section — style all offer cards and the Sunday Special banner with vintage festive South Indian aesthetics (gold borders, temple-arch top, aged paper feel); (10) Reviews section — use an aged cream card background with saffron star icons and a terracotta/gold ornamental border; (11) Footer — deep forest-green background with turmeric gold text accents, saffron dividers, and a decorative kolam/rangoli footer motif; (12) Floating WhatsApp button — retain existing functionality but restyle with a vintage green tone consistent with the new palette. All existing content, links, pricing, basket functionality, and WhatsApp/Zomato integrations must be fully preserved.",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-entire-website-with-a-clean-modern-professional-food-brand-theme-replace-the-current-vintage-parchment-aesthetic-with-a-fresh-contemporary-design-using-a-refined-color-palette-deep-emerald-green-1a6b3c-warm-white-ffffff-soft-off-white-f9f6f0-rich-amber-saffron-e07b1a-and-charcoal-2d2d2d-for-body-text-remove-all-aged-paper-textures-kolam-dot-grid-watermarks-banana-leaf-svg-dividers-and-temple-arch-lotus-ornamental-svg-borders-from-all-section-headings-and-cards-use-clean-modern-sans-serif-typography-inter-or-poppins-for-body-text-and-a-refined-serif-playfair-display-only-for-section-headings-without-ornate-letter-spacing-or-vintage-styling",
+      "title": "Redesign the entire website with a clean, modern, professional food-brand theme. Replace the current vintage/parchment aesthetic with a fresh, contemporary design using a refined color palette: deep emerald green (#1A6B3C), warm white (#FFFFFF), soft off-white (#F9F6F0), rich amber/saffron (#E07B1A), and charcoal (#2D2D2D) for body text. Remove all aged-paper textures, kolam dot-grid watermarks, banana-leaf SVG dividers, and temple-arch/lotus ornamental SVG borders from all section headings and cards. Use clean, modern sans-serif typography (Inter or Poppins) for body text and a refined serif (Playfair Display) only for section headings — without ornate letter-spacing or vintage styling.",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-navbar-with-a-clean-white-or-off-white-f9f6f0-background-a-subtle-bottom-border-in-emerald-green-the-company-logo-on-the-left-brand-name-in-deep-emerald-serif-and-nav-links-in-charcoal-with-an-amber-saffron-hover-underline-remove-the-dark-forest-green-navbar-background-and-gold-tinted-vintage-styling-keep-the-collapsible-hamburger-menu-for-mobile",
+      "title": "Redesign the Navbar with a clean white or off-white (#F9F6F0) background, a subtle bottom border in emerald green, the company logo on the left, brand name in deep emerald serif, and nav links in charcoal with an amber/saffron hover underline. Remove the dark forest-green navbar background and gold-tinted vintage styling. Keep the collapsible hamburger menu for mobile.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-hero-section-with-a-clean-full-width-layout-use-a-high-contrast-overlay-on-the-hero-background-image-hero-bg-dim-1440x800-png-a-deep-emerald-gradient-overlay-from-left-semi-opaque-emerald-green-to-transparent-right-replacing-the-amber-sepia-tint-style-the-business-name-in-large-bold-playfair-display-white-the-subtitle-fresh-hygienic-authentic-in-amber-saffron-and-the-tagline-in-clean-white-sans-serif-the-order-on-whatsapp-cta-button-should-be-styled-in-solid-amber-saffron-with-white-text-and-a-rounded-modern-shape-keep-the-company-logo-displayed-above-the-business-name",
+      "title": "Redesign the Hero section with a clean full-width layout. Use a high-contrast overlay on the hero background image (hero-bg.dim_1440x800.png) — a deep emerald gradient overlay from left (semi-opaque emerald green) to transparent right — replacing the amber/sepia tint. Style the business name in large, bold Playfair Display white, the subtitle 'Fresh • Hygienic • Authentic' in amber/saffron, and the tagline in clean white sans-serif. The 'Order on WhatsApp' CTA button should be styled in solid amber/saffron with white text and a rounded modern shape. Keep the company logo displayed above the business name.",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-about-us-section-with-a-clean-white-ffffff-background-removing-all-parchment-textures-and-decorative-banana-leaf-accents-use-a-simple-two-column-layout-text-left-image-right-on-desktop-stacked-on-mobile-style-the-section-heading-about-us-in-playfair-display-deep-emerald-with-a-clean-amber-underline-accent-style-the-four-value-cards-fresh-natural-hygienic-authentic-as-modern-clean-tiles-with-a-white-background-emerald-icon-and-a-light-emerald-border",
+      "title": "Redesign the About Us section with a clean white (#FFFFFF) background, removing all parchment textures and decorative banana-leaf accents. Use a simple two-column layout (text left, image right on desktop, stacked on mobile). Style the section heading 'About Us' in Playfair Display deep emerald with a clean amber underline accent. Style the four value cards (Fresh, Natural, Hygienic, Authentic) as modern clean tiles with a white background, emerald icon, and a light emerald border.",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-products-section-with-a-light-off-white-f9f6f0-background-replace-aged-parchment-card-backgrounds-terracotta-borders-and-lotus-corner-motifs-with-clean-modern-product-cards-white-background-subtle-light-grey-box-shadow-rounded-corners-12px-emerald-green-product-name-heading-charcoal-description-text-an-amber-saffron-price-badge-styled-as-a-modern-pill-tag-and-a-solid-emerald-add-to-basket-button-keep-all-pricing-quantity-selectors-and-basket-functionality-intact",
+      "title": "Redesign the Products section with a light off-white (#F9F6F0) background. Replace aged-parchment card backgrounds, terracotta borders, and lotus corner motifs with clean modern product cards: white background, subtle light grey box-shadow, rounded corners (12px), emerald green product name heading, charcoal description text, an amber/saffron price badge styled as a modern pill/tag, and a solid emerald 'Add to Basket' button. Keep all pricing, quantity selectors, and basket functionality intact.",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-why-choose-us-section-with-a-clean-emerald-green-1a6b3c-background-replace-the-dark-forest-green-vintage-treatment-and-kolam-dot-pattern-with-a-clean-modern-layout-feature-cards-should-have-a-semi-transparent-white-background-with-white-icon-badges-using-solid-modern-icons-white-heading-and-light-cream-description-text-arrange-in-a-clean-responsive-grid-3-columns-desktop-2-tablet-1-mobile",
+      "title": "Redesign the Why Choose Us section with a clean emerald green (#1A6B3C) background. Replace the dark forest-green vintage treatment and kolam dot-pattern with a clean modern layout. Feature cards should have a semi-transparent white background with white icon badges (using solid modern icons), white heading, and light cream description text. Arrange in a clean responsive grid (3 columns desktop, 2 tablet, 1 mobile).",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-offers-section-with-a-clean-off-white-f9f6f0-background-remove-vintage-gold-borders-temple-arch-tops-and-aged-paper-styling-from-all-offer-cards-and-the-sunday-special-banner-style-offer-cards-as-modern-clean-cards-with-white-background-emerald-heading-and-amber-saffron-accent-borders-restyle-the-sunday-special-banner-as-a-bold-modern-gradient-banner-emerald-to-amber-saffron-with-white-text-keep-the-sunday-special-promotional-text-buy-2-kg-of-any-batter-and-get-kg-batter-absolutely-free-the-zomato-cta-https-zomato-onelink-me-xqzv-v2xa8r5r-and-all-whatsapp-links-unchanged",
+      "title": "Redesign the Offers section with a clean off-white (#F9F6F0) background. Remove vintage gold borders, temple-arch tops, and aged-paper styling from all offer cards and the Sunday Special banner. Style offer cards as modern clean cards with white background, emerald heading, and amber/saffron accent borders. Restyle the Sunday Special banner as a bold modern gradient banner (emerald to amber/saffron) with white text. Keep the Sunday Special promotional text ('Buy 2 kg of any batter and get ½ kg batter absolutely FREE!'), the Zomato CTA (https://zomato.onelink.me/xqzv/v2xa8r5r), and all WhatsApp links unchanged.",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-reviews-section-with-a-clean-white-ffffff-background-replace-aged-cream-card-backgrounds-and-terracotta-gold-ornamental-borders-with-modern-clean-review-cards-white-background-light-grey-box-shadow-saffron-star-icons-retained-customer-name-in-emerald-bold-review-text-in-charcoal-add-a-thin-amber-saffron-top-border-accent-to-each-card-maintain-the-horizontal-scroll-mobile-layout-and-2-4-column-desktop-grid",
+      "title": "Redesign the Reviews section with a clean white (#FFFFFF) background. Replace aged-cream card backgrounds and terracotta/gold ornamental borders with modern clean review cards: white background, light grey box-shadow, saffron star icons (retained), customer name in emerald bold, review text in charcoal. Add a thin amber/saffron top border accent to each card. Maintain the horizontal-scroll mobile layout and 2/4-column desktop grid.",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-contact-section-with-a-light-off-white-f9f6f0-background-replace-parchment-style-decorative-motifs-with-a-clean-modern-layout-contact-info-cards-should-be-white-with-emerald-icons-charcoal-text-and-subtle-box-shadow-the-google-maps-iframe-should-have-a-clean-emerald-border-radius-frame-keep-the-full-address-21-9-222-madhura-nagar-railway-station-main-rd-saibaba-colony-cross-vijayawada-andhra-pradesh-520011-all-phone-numbers-and-whatsapp-link-https-wa-me-918143497999-unchanged",
+      "title": "Redesign the Contact section with a light off-white (#F9F6F0) background. Replace parchment-style decorative motifs with a clean modern layout. Contact info cards should be white with emerald icons, charcoal text, and subtle box-shadow. The Google Maps iframe should have a clean emerald border-radius frame. Keep the full address '21-9-222 Madhura Nagar Railway Station, Main Rd, Saibaba Colony, cross, Vijayawada, Andhra Pradesh 520011', all phone numbers, and WhatsApp link (https://wa.me/918143497999) unchanged.",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-footer-with-a-deep-charcoal-1e1e1e-or-deep-emerald-0f3d24-background-white-text-amber-saffron-accent-headings-and-dividers-remove-the-vintage-kolam-rangoli-footer-motif-and-turmeric-gold-decorations-use-a-clean-modern-multi-column-grid-layout-keep-the-zomato-order-link-https-zomato-onelink-me-xqzv-v2xa8r5r-whatsapp-link-https-wa-me-918143497999-all-navigation-links-contact-info-brand-name-tagline-and-copyright-notice-intact",
+      "title": "Redesign the Footer with a deep charcoal (#1E1E1E) or deep emerald (#0F3D24) background, white text, amber/saffron accent headings and dividers. Remove the vintage kolam/rangoli footer motif and turmeric gold decorations. Use a clean modern multi-column grid layout. Keep the Zomato order link (https://zomato.onelink.me/xqzv/v2xa8r5r), WhatsApp link (https://wa.me/918143497999), all navigation links, contact info, brand name, tagline, and copyright notice intact.",
+      "reqIds": [
+        "REQ-34"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-company-logo-in-navbar-tsx-and-hero-tsx-to-use-the-newly-uploaded-logo-image-file-0000000005e87207904139ab8127498e-1-png-south-indian-grandmother-grinding-batter-with-temple-banana-leaves-idli-dosa-diyas-and-rama-s-idly-and-dosa-batters-authentic-home-made-taste-text-on-a-cream-circular-background-save-it-as-company-logo-round-dim-400x400-png-in-frontend-public-assets-generated-and-update-all-logo-img-references-in-navbar-tsx-and-hero-tsx-to-use-this-new-file-display-the-logo-as-is-without-any-background-removal-or-css-filter-applied",
+      "title": "Update the company logo in Navbar.tsx and Hero.tsx to use the newly uploaded logo image (file_0000000005e87207904139ab8127498e (1).png — South Indian grandmother grinding batter with temple, banana leaves, idli/dosa, diyas, and 'Rama's Idly And Dosa Batters / Authentic Home Made Taste' text on a cream circular background). Save it as company-logo-round.dim_400x400.png in frontend/public/assets/generated/ and update all logo <img> references in Navbar.tsx and Hero.tsx to use this new file. Display the logo as-is without any background removal or CSS filter applied.",
+      "reqIds": [
+        "REQ-35"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-restyle-the-floating-whatsapp-button-floatingwhatsappbutton-tsx-and-basket-summary-basketsummary-tsx-to-match-the-new-professional-theme-the-floating-whatsapp-button-should-use-a-clean-solid-25d366-whatsapp-green-background-with-white-icon-and-a-modern-drop-shadow-removing-any-vintage-green-toning-the-basket-summary-panel-should-use-a-clean-white-background-emerald-headings-charcoal-text-amber-saffron-total-price-highlight-and-a-modern-solid-emerald-order-via-whatsapp-button-all-functionality-whatsapp-link-https-wa-me-918143497999-basket-clear-quantity-display-must-remain-intact",
+      "title": "Restyle the floating WhatsApp button (FloatingWhatsAppButton.tsx) and basket summary (BasketSummary.tsx) to match the new professional theme. The floating WhatsApp button should use a clean solid #25D366 (WhatsApp green) background with white icon and a modern drop-shadow, removing any vintage-green toning. The basket summary panel should use a clean white background, emerald headings, charcoal text, amber/saffron total price highlight, and a modern solid emerald 'Order via WhatsApp' button. All functionality (WhatsApp link https://wa.me/918143497999, basket clear, quantity display) must remain intact.",
+      "reqIds": [
+        "REQ-36"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-company-logo-in-navbar-tsx-and-hero-tsx-with-the-newly-uploaded-logo-image-file-000000005cf472088e0c446671034781-1-png-illustrated-south-indian-grandmother-grinding-batter-with-temple-banana-leaves-idli-dosa-diyas-gold-vessels-spices-and-rama-s-idly-and-dosa-batters-authentic-home-made-taste-text-on-a-cream-circular-background-save-it-as-company-logo-round-dim-400x400-png-in-frontend-public-assets-generated-and-update-all-logo-img-references-in-navbar-tsx-and-hero-tsx-to-use-this-new-file-display-the-logo-as-is-without-any-background-removal-or-css-filter-applied",
+      "title": "Replace the current company logo in Navbar.tsx and Hero.tsx with the newly uploaded logo image (file_000000005cf472088e0c446671034781-1.png — illustrated South Indian grandmother grinding batter with temple, banana leaves, idli/dosa, diyas, gold vessels, spices, and 'Rama's Idly And Dosa Batters / Authentic Home Made Taste' text on a cream circular background). Save it as company-logo-round.dim_400x400.png in frontend/public/assets/generated/ and update all logo <img> references in Navbar.tsx and Hero.tsx to use this new file. Display the logo as-is without any background removal or CSS filter applied.",
+      "reqIds": [
+        "REQ-37"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-product-card-images-in-the-products-section-products-tsx-with-the-newly-uploaded-images-use-product-idly-dosa-packets-dim-800x600-png-from-file-000000003b207206a1597992cfc2fc96-2-png-two-rama-s-branded-batter-packets-on-a-clean-kitchen-counter-with-idly-and-dosa-served-on-plates-in-front-for-the-idly-batter-card-use-product-rustic-kitchen-dim-800x600-png-from-1768416241963-1-jpg-two-rama-s-branded-batter-packets-on-a-rustic-wooden-table-with-stone-grinder-marigold-flowers-idly-in-basket-and-dosa-on-plate-for-the-dosa-batter-card-use-product-vada-ragi-dim-800x600-png-from-file-00000000dd7c71fab17763813c073305-1-png-two-rama-s-branded-batter-packets-on-a-kitchen-counter-with-ragi-idly-balls-and-vada-rings-on-plates-in-front-for-the-vada-batter-card-all-images-must-be-saved-to-frontend-public-assets-generated-and-referenced-from-there-keep-all-existing-pricing-quantity-selectors-basket-functionality-and-whatsapp-links-unchanged",
+      "title": "Replace the product card images in the Products section (Products.tsx) with the newly uploaded images. Use product-idly-dosa-packets.dim_800x600.png (from file_000000003b207206a1597992cfc2fc96 (2).png — two Rama's branded batter packets on a clean kitchen counter with idly and dosa served on plates in front) for the Idly Batter card. Use product-rustic-kitchen.dim_800x600.png (from 1768416241963-1.jpg — two Rama's branded batter packets on a rustic wooden table with stone grinder, marigold flowers, idly in basket, and dosa on plate) for the Dosa Batter card. Use product-vada-ragi.dim_800x600.png (from file_00000000dd7c71fab17763813c073305-1.png — two Rama's branded batter packets on a kitchen counter with ragi idly balls and vada rings on plates in front) for the Vada Batter card. All images must be saved to frontend/public/assets/generated/ and referenced from there. Keep all existing pricing, quantity selectors, basket functionality, and WhatsApp links unchanged.",
+      "reqIds": [
+        "REQ-38"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-refreshed-visual-theme-across-all-website-sections-update-colors-typography-spacing-and-decorative-styling-while-keeping-all-existing-content-text-images-pricing-basket-functionality-whatsapp-links-https-wa-me-918143497999-zomato-link-https-zomato-onelink-me-xqzv-v2xa8r5r-navigation-structure-and-layout-hierarchy-completely-unchanged-choose-a-cohesive-polished-color-palette-and-typography-system-and-apply-it-consistently-to-navbar-hero-about-us-products-why-choose-us-offers-reviews-contact-footer-floatingwhatsappbutton-and-basketsummary",
+      "title": "Apply a refreshed visual theme across all website sections — update colors, typography, spacing, and decorative styling — while keeping all existing content, text, images, pricing, basket functionality, WhatsApp links (https://wa.me/918143497999), Zomato link (https://zomato.onelink.me/xqzv/v2xa8r5r), navigation structure, and layout hierarchy completely unchanged. Choose a cohesive, polished color palette and typography system and apply it consistently to: Navbar, Hero, About Us, Products, Why Choose Us, Offers, Reviews, Contact, Footer, FloatingWhatsAppButton, and BasketSummary.",
+      "reqIds": [
+        "REQ-39"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Add real business address (21-9-222 Madhura Nagar Railway Station, Main Rd, Saibaba Colony, cross, Vijayawada, Andhra Pradesh 520011) to the Contact section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Embed real Google Maps location using the shared link https://share.google/dO9azSt3yVlwXZjsN in the Contact section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add company logo image (user-provided) to the navbar and/or hero section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Replace placeholder product images with actual user-provided product images for all 5 product cards",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add pricing to each product card: Idly Batter 1kg=₹45, Dosa Batter 1kg=₹45, Vada Batter 1kg=₹100, Ragi Idly Batter 1kg=₹60, Ragi Dosa Batter 1kg=₹60",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add 'Add to Basket' with quantity selector on product cards; on order, send a WhatsApp message summarizing the basket quantities and total to +91-8143497999",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add Zomato Partner App section/button for online orders using link https://zomato.onelink.me/xqzv/v2xa8r5r",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Replace Vada Batter product card image with the user-provided image (uploaded in this message)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Replace current logo with new user-uploaded logo: remove background color, display symbol only (transparent background)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Update Sunday Special offer text to: 'Buy 2kg of any batter and get 1/2kg batter absolutely free'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Redesign logo as round/circular shape (not square) with vintage traditional South Indian style",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Redesign website with the best professional theme — improve color combination and overall visual design while keeping the existing logo unchanged",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Change only the theme/visual design of the website (colors, styling) while keeping all content, functionality, and structure unchanged",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Rama's Idly & Dosa Batters",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

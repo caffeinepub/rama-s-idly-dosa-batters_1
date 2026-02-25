@@ -1,0 +1,52 @@
+{
+  "kind": "build_request",
+  "title": "Change website theme/visual styling only",
+  "projectName": "Rama's Idly & Dosa Batters",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-39",
+      "text": "Apply a refreshed visual theme across all website sections — update colors, typography, spacing, and decorative styling — while keeping all existing content, text, images, pricing, basket functionality, WhatsApp links (https://wa.me/918143497999), Zomato link (https://zomato.onelink.me/xqzv/v2xa8r5r), navigation structure, and layout hierarchy completely unchanged. Choose a cohesive, polished color palette and typography system and apply it consistently to: Navbar, Hero, About Us, Products, Why Choose Us, Offers, Reviews, Contact, Footer, FloatingWhatsAppButton, and BasketSummary.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "Only theme can change"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All section headings, body text, product names, descriptions, and pricing remain word-for-word identical to the current version",
+        "All WhatsApp links continue to open https://wa.me/918143497999 in a new tab",
+        "Zomato link https://zomato.onelink.me/xqzv/v2xa8r5r remains functional and unchanged",
+        "Add to Basket, quantity selector, basket summary, and WhatsApp order message functionality remain fully intact",
+        "Company logo (company-logo-round.dim_400x400.png) continues to display in Navbar and Hero without modification",
+        "All product images (product-idly-dosa-packets.dim_800x600.png, product-rustic-kitchen.dim_800x600.png, product-vada-ragi.dim_800x600.png, and existing ragi batter images) remain in place",
+        "Google Maps iframe and full business address remain in the Contact section",
+        "A new cohesive color palette and typography system is applied consistently across every component",
+        "Website remains fully mobile-responsive with hamburger menu on mobile",
+        "No content, navigation links, phone numbers, or section structure is added, removed, or reordered"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change any text content, product descriptions, pricing, phone numbers, addresses, or business information",
+    "Do not alter any WhatsApp or Zomato URLs",
+    "Do not modify basket/order functionality or logic",
+    "Do not replace or resize any existing images",
+    "Do not change the section order or navigation structure",
+    "Do not edit files in frontend/src/hooks/ or frontend/src/main.tsx"
+  ],
+  "nonGoals": [
+    "Adding new sections or features",
+    "Changing any written content or copy",
+    "Modifying backend logic",
+    "Replacing product or logo images",
+    "Altering basket or WhatsApp order message logic"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
