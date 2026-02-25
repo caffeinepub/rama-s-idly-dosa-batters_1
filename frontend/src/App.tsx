@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="min-h-screen bg-background font-body">
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <AboutUs />
         <Products onAddToBasket={addToBasket} />

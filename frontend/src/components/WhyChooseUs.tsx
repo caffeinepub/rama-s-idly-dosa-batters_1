@@ -1,20 +1,35 @@
-import { Leaf, Clock, ShieldCheck, Truck, Flame, Heart } from 'lucide-react';
+import { Leaf, Clock, ShieldCheck, Truck, Flame, Heart, Droplets, Ban, FlaskConical, CheckCircle } from 'lucide-react';
 
 const features = [
   {
-    icon: Leaf,
-    title: 'Natural Ingredients',
-    description: 'Only the finest rice, lentils, and spices — sourced fresh from trusted local suppliers.',
+    icon: Droplets,
+    title: 'Pure RO Water',
+    description: 'We use 100% pure RO-filtered water in every batch for the cleanest, safest batter possible.',
   },
   {
     icon: Clock,
-    title: 'Traditional Fermentation',
-    description: 'Naturally fermented for 8–12 hours for that authentic tangy flavour and perfect texture.',
+    title: 'Naturally Fermenting',
+    description: 'Naturally fermented for 8–12 hours for that authentic tangy flavour and perfect texture — no shortcuts.',
+  },
+  {
+    icon: Ban,
+    title: 'No Preservatives',
+    description: 'Absolutely no artificial preservatives, colours, or additives. Pure and wholesome every time.',
+  },
+  {
+    icon: FlaskConical,
+    title: 'No Salt / No Soda',
+    description: 'Zero added salt or soda — just pure, naturally prepared batter the traditional way.',
+  },
+  {
+    icon: Leaf,
+    title: 'Quality Raw Materials',
+    description: 'Only the finest rice, lentils, and spices — sourced fresh from trusted local suppliers.',
   },
   {
     icon: ShieldCheck,
-    title: 'No Preservatives',
-    description: 'Absolutely no artificial preservatives, colours, or additives. Pure and wholesome.',
+    title: 'FSSAI Approved',
+    description: 'Fully FSSAI certified and compliant. Prepared in a hygienic kitchen with strict food safety standards.',
   },
   {
     icon: Flame,
@@ -29,7 +44,7 @@ const features = [
   {
     icon: Heart,
     title: 'Hygiene First',
-    description: 'Prepared in a FSSAI-compliant kitchen with strict hygiene and food safety standards.',
+    description: 'Maintaining hygiene and authentic style vibes — because good food starts with a clean kitchen.',
   },
 ];
 
@@ -56,11 +71,21 @@ export default function WhyChooseUs() {
             Why Choose Us?
           </h2>
           <div
-            className="w-16 h-1 mx-auto mb-6"
+            className="w-16 h-1 mx-auto mb-4"
             style={{ background: 'linear-gradient(90deg, #D4820A, #E89A20)', borderRadius: '2px' }}
           />
+          {/* FSSAI Badge */}
+          <div className="flex justify-center mb-4">
+            <span
+              className="inline-flex items-center gap-2 px-4 py-1.5 text-sm font-bold font-body text-white"
+              style={{ backgroundColor: '#2E7D32', borderRadius: '20px' }}
+            >
+              <CheckCircle className="w-4 h-4" />
+              Completely FSSAI Approved
+            </span>
+          </div>
           <p className="text-white/80 max-w-xl mx-auto text-base md:text-lg leading-relaxed font-body">
-            We're not just selling batter — we're delivering a piece of authentic South Indian heritage.
+            We're not just selling batter — we're delivering a piece of authentic South Indian heritage with hygiene, quality, and love.
           </p>
         </div>
 

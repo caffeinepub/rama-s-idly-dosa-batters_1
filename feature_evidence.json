@@ -2,22 +2,11 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-apply-a-refreshed-visual-theme-across-all-website-sections-update-colors-typography-spacing-and-decorative-styling-while-keeping-all-existing-content-text-images-pricing-basket-functionality-whatsapp-links-https-wa-me-918143497999-zomato-link-https-zomato-onelink-me-xqzv-v2xa8r5r-navigation-structure-and-layout-hierarchy-completely-unchanged-choose-a-cohesive-polished-color-palette-and-typography-system-and-apply-it-consistently-to-navbar-hero-about-us-products-why-choose-us-offers-reviews-contact-footer-floatingwhatsappbutton-and-basketsummary",
-      "featureTitle": "Apply a refreshed visual theme across all website sections — update colors, typography, spacing, and decorative styling — while keeping all existing content, text, images, pricing, basket functionality, WhatsApp links (https://wa.me/918143497999), Zomato link (https://zomato.onelink.me/xqzv/v2xa8r5r), navigation structure, and layout hierarchy completely unchanged. Choose a cohesive, polished color palette and typography system and apply it consistently to: Navbar, Hero, About Us, Products, Why Choose Us, Offers, Reviews, Contact, Footer, FloatingWhatsAppButton, and BasketSummary.",
+      "featureId": "feature-create-a-dedicated-sitemap-route-or-modal-drawer-accessible-from-the-footer-or-navbar-that-renders-a-visual-human-readable-sitemap-listing-all-page-sections-home-products-offers-about-why-choose-us-reviews-and-contact-each-as-a-clickable-anchor-that-smooth-scrolls-to-the-corresponding-section",
+      "featureTitle": "Create a dedicated '/sitemap' route (or modal/drawer accessible from the footer or navbar) that renders a visual, human-readable sitemap listing all page sections: Home, Products, Offers, About, Why Choose Us, Reviews, and Contact — each as a clickable anchor that smooth-scrolls to the corresponding section.",
       "files": [
-        "frontend/src/components/AboutUs.tsx",
-        "frontend/src/components/BasketSummary.tsx",
-        "frontend/src/components/Contact.tsx",
-        "frontend/src/components/FloatingWhatsAppButton.tsx",
         "frontend/src/components/Footer.tsx",
-        "frontend/src/components/Hero.tsx",
-        "frontend/src/components/Navbar.tsx",
-        "frontend/src/components/Offers.tsx",
-        "frontend/src/components/Products.tsx",
-        "frontend/src/components/Reviews.tsx",
-        "frontend/src/components/WhyChooseUs.tsx",
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
+        "frontend/src/components/Sitemap.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -28,7 +17,7 @@
         "blob-storage@4.0.0"
       ],
       "testIds": [
-        "REQ-39"
+        "REQ-1"
       ],
       "confidence": "high"
     }

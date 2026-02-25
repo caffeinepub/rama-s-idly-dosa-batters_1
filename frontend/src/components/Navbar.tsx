@@ -45,6 +45,7 @@ export default function Navbar() {
 
   return (
     <nav
+      aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-cream shadow-md border-b-2 border-saffron'
@@ -57,37 +58,41 @@ export default function Navbar() {
           <button
             onClick={() => scrollTo('#home')}
             className="flex items-center gap-2 group"
+            aria-label="Rama's Home Foods - Go to homepage"
           >
             <img
               src="/assets/file_000000005cf472088e0c446671034781-1.png"
-              alt="Rama's Idly And Dosa Batters Logo"
+              alt="Rama's Home Foods - Idly and Dosa Batters Logo"
               className="w-12 h-12 md:w-14 md:h-14 object-contain"
             />
           </button>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-1">
+          <ul className="hidden md:flex items-center gap-1 list-none m-0 p-0">
             {navLinks.map(link => (
-              <button
-                key={link.href}
-                onClick={() => scrollTo(link.href)}
-                className={`px-3 py-2 text-sm font-medium rounded transition-all duration-200 relative group font-body ${
-                  activeSection === link.href.replace('#', '')
-                    ? 'text-spice font-semibold'
-                    : 'text-ink hover:text-saffron'
-                }`}
-              >
-                {link.label}
-                <span
-                  className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 rounded-full transition-all duration-200 ${
+              <li key={link.href}>
+                <button
+                  onClick={() => scrollTo(link.href)}
+                  className={`px-3 py-2 text-sm font-medium rounded transition-all duration-200 relative group font-body ${
                     activeSection === link.href.replace('#', '')
-                      ? 'w-4/5 bg-saffron'
-                      : 'w-0 group-hover:w-4/5 bg-saffron'
+                      ? 'text-spice font-semibold'
+                      : 'text-ink hover:text-saffron'
                   }`}
-                />
-              </button>
+                  aria-current={activeSection === link.href.replace('#', '') ? 'page' : undefined}
+                >
+                  {link.label}
+                  <span
+                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 rounded-full transition-all duration-200 ${
+                      activeSection === link.href.replace('#', '')
+                        ? 'w-4/5 bg-saffron'
+                        : 'w-0 group-hover:w-4/5 bg-saffron'
+                    }`}
+                    aria-hidden="true"
+                  />
+                </button>
+              </li>
             ))}
-          </div>
+          </ul>
 
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-3">
@@ -96,16 +101,19 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white transition-all duration-200 hover:shadow-spice hover:-translate-y-0.5 font-body bg-spice rounded"
+              aria-label="Order Rama's Home Foods batters on WhatsApp"
             >
-              <ShoppingBasket className="w-4 h-4" />
+              <ShoppingBasket className="w-4 h-4" aria-hidden="true" />
               Order Now
             </a>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 rounded text-ink hover:bg-cream-dark transition-colors"
-              aria-label="Toggle menu"
+              aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
             >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isOpen ? <X className="w-5 h-5" aria-hidden="true" /> : <Menu className="w-5 h-5" aria-hidden="true" />}
             </button>
           </div>
         </div>
@@ -113,31 +121,36 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-cream border-t border-cream-dark shadow-lg">
-          <div className="px-4 py-3 space-y-1">
+        <div id="mobile-menu" className="md:hidden bg-cream border-t border-cream-dark shadow-lg">
+          <ul className="px-4 py-3 space-y-1 list-none m-0 p-0 px-4 py-3">
             {navLinks.map(link => (
-              <button
-                key={link.href}
-                onClick={() => scrollTo(link.href)}
-                className={`w-full text-left px-4 py-3 rounded text-sm font-medium transition-colors font-body ${
-                  activeSection === link.href.replace('#', '')
-                    ? 'bg-spice/10 text-spice font-semibold'
-                    : 'text-ink hover:bg-cream-dark hover:text-saffron'
-                }`}
-              >
-                {link.label}
-              </button>
+              <li key={link.href}>
+                <button
+                  onClick={() => scrollTo(link.href)}
+                  className={`w-full text-left px-4 py-3 rounded text-sm font-medium transition-colors font-body ${
+                    activeSection === link.href.replace('#', '')
+                      ? 'bg-spice/10 text-spice font-semibold'
+                      : 'text-ink hover:bg-cream-dark hover:text-saffron'
+                  }`}
+                  aria-current={activeSection === link.href.replace('#', '') ? 'page' : undefined}
+                >
+                  {link.label}
+                </button>
+              </li>
             ))}
-            <a
-              href="https://wa.me/918143497999"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full mt-2 px-4 py-3 rounded text-sm font-semibold text-white bg-spice font-body"
-            >
-              <ShoppingBasket className="w-4 h-4" />
-              Order on WhatsApp
-            </a>
-          </div>
+            <li>
+              <a
+                href="https://wa.me/918143497999"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full mt-2 px-4 py-3 rounded text-sm font-semibold text-white bg-spice font-body"
+                aria-label="Order Rama's Home Foods batters on WhatsApp"
+              >
+                <ShoppingBasket className="w-4 h-4" aria-hidden="true" />
+                Order on WhatsApp
+              </a>
+            </li>
+          </ul>
         </div>
       )}
     </nav>

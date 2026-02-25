@@ -1,88 +1,32 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Change website theme/visual styling only",
+  "title": "Add developer sitemap / site navigation reference",
   "requirements": [
     {
-      "id": "REQ-39",
-      "summary": "Apply a refreshed visual theme (colors, typography, spacing, decorative styling) across all website sections while keeping all existing content, text, images, pricing, basket functionality, WhatsApp links, Zomato link, navigation structure, and layout hierarchy completely unchanged",
+      "id": "REQ-1",
+      "summary": "Create a dedicated '/sitemap' route or modal accessible from the footer that renders a visual, human-readable sitemap listing all page sections with clickable smooth-scroll anchors.",
       "acceptanceCriteria": [
-        "All section headings, body text, product names, descriptions, and pricing remain word-for-word identical to the current version",
-        "All WhatsApp links continue to open https://wa.me/918143497999 in a new tab",
-        "Zomato link https://zomato.onelink.me/xqzv/v2xa8r5r remains functional and unchanged",
-        "Add to Basket, quantity selector, basket summary, and WhatsApp order message functionality remain fully intact",
-        "Company logo (company-logo-round.dim_400x400.png) continues to display in Navbar and Hero without modification",
-        "All product images (product-idly-dosa-packets.dim_800x600.png, product-rustic-kitchen.dim_800x600.png, product-vada-ragi.dim_800x600.png, and existing ragi batter images) remain in place",
-        "Google Maps iframe and full business address remain in the Contact section",
-        "A new cohesive color palette and typography system is applied consistently across every component",
-        "Website remains fully mobile-responsive with hamburger menu on mobile",
-        "No content, navigation links, phone numbers, or section structure is added, removed, or reordered"
+        "All seven sections (Home, Products, Offers, About, Why Choose Us, Reviews, Contact) are listed in the sitemap view.",
+        "Each entry is a clickable link that navigates/scrolls to the corresponding section on the main page.",
+        "The sitemap view is accessible from the footer navigation links.",
+        "The sitemap renders correctly on both desktop and mobile viewports."
       ],
       "file_operations": [
         {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Update the Tailwind theme configuration with a new cohesive color palette (replacing emerald, amber, charcoal tokens with fresh alternatives), refined typography scale, updated spacing tokens, enhanced box shadows, and adjusted border radii to establish the foundation for the refreshed visual theme across all components"
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Update CSS custom properties for light and dark themes with the new color palette, apply new typography rules (font families, weights, sizes, line heights), adjust global spacing and padding utilities, refine button and card styling classes, and update section heading styles to match the refreshed theme while preserving all existing utility class names"
-        },
-        {
-          "path": "frontend/src/components/Navbar.tsx",
-          "operation": "modify",
-          "description": "Apply the new color palette to background, text, active link indicators, and hover states; update typography styling for navigation links and CTA button; adjust spacing and padding to match the refreshed theme; ensure the company logo display and all navigation functionality remain unchanged"
-        },
-        {
-          "path": "frontend/src/components/Hero.tsx",
-          "operation": "modify",
-          "description": "Apply the new color scheme to the hero section overlay, heading text, tagline, and CTA buttons; update typography styling for the brand name and descriptive text; adjust spacing between elements; ensure the background image (hero-bg.dim_1440x800.png or hero-bg-vintage.dim_1440x800.png), company logo (company-logo-round.dim_400x400.png), star rating, and all WhatsApp links remain unchanged"
-        },
-        {
-          "path": "frontend/src/components/AboutUs.tsx",
-          "operation": "modify",
-          "description": "Replace the emerald styling with the new color palette for section heading, value cards, and accent elements; update typography for headings and body text; adjust card styling, shadows, and spacing; ensure the batter preparation image (about-batter-preparation.dim_600x400.png or about-batter-preparation-vintage.dim_600x400.png), stat card content, and all descriptive text remain unchanged"
-        },
-        {
-          "path": "frontend/src/components/Products.tsx",
-          "operation": "modify",
-          "description": "Apply the new color palette to product cards, buttons, quantity selector controls, and hover states; update typography for product names, descriptions, and pricing; adjust card shadows, borders, and spacing; ensure all product images (dosa-batter.dim_400x300.png, idly-batter.dim_400x300.png, vada-batter.dim_400x300.png, ragi-dosa-batter.dim_400x300.png, ragi-idly-batter.dim_400x300.png), pricing information, and add-to-basket functionality remain unchanged"
-        },
-        {
-          "path": "frontend/src/components/WhyChooseUs.tsx",
-          "operation": "modify",
-          "description": "Replace the green background and feature card styling with the new color palette; update typography for section heading and feature card text; adjust icon colors, card shadows, borders, and spacing to match the refreshed theme; ensure all six feature cards (natural ingredients, fermentation, no preservatives, freshness, delivery, hygiene), their Lucide icons, and descriptive text remain unchanged"
-        },
-        {
-          "path": "frontend/src/components/Offers.tsx",
-          "operation": "modify",
-          "description": "Apply the new color palette to the section background, offer cards, Sunday Special banner, and CTA buttons; update typography for headings and offer descriptions; adjust card styling, shadows, and spacing; ensure the Sunday Special banner image (sunday-special-banner.dim_1200x300.png), all promotional text content, WhatsApp link (https://wa.me/918143497999), and Zomato link (https://zomato.onelink.me/xqzv/v2xa8r5r) remain unchanged"
-        },
-        {
-          "path": "frontend/src/components/Reviews.tsx",
-          "operation": "modify",
-          "description": "Apply the new color palette to the section background, testimonial cards, star ratings, and avatar styling; update typography for reviewer quotes and names; adjust card shadows, borders, and spacing to match the refreshed theme; ensure all four hardcoded testimonial cards with their star ratings, quotes, and reviewer initials remain unchanged"
-        },
-        {
-          "path": "frontend/src/components/Contact.tsx",
-          "operation": "modify",
-          "description": "Apply the new color palette to the section background, info cards (address, phone, hours, WhatsApp), and WhatsApp CTA button; update typography for headings and contact details; adjust card styling, shadows, and spacing; ensure the Google Maps iframe, full business address, phone number (8143497999), WhatsApp link (https://wa.me/918143497999), and all contact information remain unchanged"
+          "path": "frontend/src/components/Sitemap.tsx",
+          "operation": "create",
+          "description": "Create a new Sitemap component that renders a visual, human-readable sitemap listing all seven page sections (Home, Products, Offers, About, Why Choose Us, Reviews, Contact). Each section entry should be a clickable anchor that smooth-scrolls to the corresponding section on the main page using section IDs. Style the component to match the existing warm spice/terracotta design system defined in frontend/src/index.css. Ensure the layout is responsive and works on both desktop and mobile viewports. The component should accept an optional onNavigate callback prop to support closing a modal/drawer after navigation."
         },
         {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Apply the new color palette to footer background, text colors, navigation links, and CTA buttons (WhatsApp, Zomato); update typography for brand info, link sections, and contact details; adjust spacing and layout styling; ensure all navigation links, product list, contact details, WhatsApp link (https://wa.me/918143497999), Zomato link (https://zomato.onelink.me/xqzv/v2xa8r5r), and footer content remain unchanged"
+          "description": "Add a new 'Sitemap' link to the quick navigation section of the footer that opens the sitemap view. The link should trigger a modal or drawer overlay displaying the Sitemap component. Ensure the modal/drawer is accessible, includes a close button, and follows the existing design patterns. On mobile viewports, consider using a drawer from the bottom or side. After clicking any sitemap section link, close the modal/drawer and smooth-scroll to the target section."
         },
         {
-          "path": "frontend/src/components/BasketSummary.tsx",
+          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Apply the new color palette to the floating basket panel background, item list cards, quantity controls, total price display, clear button, and WhatsApp order link; update typography for basket headings, item names, and pricing; adjust panel styling, shadows, and spacing to match the refreshed theme; ensure basket functionality (add, update quantity, clear), WhatsApp order message generation, and all basket logic remain unchanged"
-        },
-        {
-          "path": "frontend/src/components/FloatingWhatsAppButton.tsx",
-          "operation": "modify",
-          "description": "Apply the new color palette to the floating button background, icon color, tooltip styling, and animated pulse rings; adjust button size, shadow, and positioning if needed to match the refreshed theme; ensure the WhatsApp link (https://wa.me/918143497999) and button functionality remain unchanged"
+          "description": "Ensure all main page sections (Hero for Home, Products, Offers, AboutUs for About, WhyChooseUs for Why Choose Us, Reviews, Contact) have stable, unique IDs that match the anchor targets used in the Sitemap component. If any sections lack IDs or use inconsistent naming, update them to use kebab-case IDs (e.g., 'home', 'products', 'offers', 'about', 'why-choose-us', 'reviews', 'contact'). Verify that the smooth-scroll behavior works consistently when navigating from the sitemap."
         }
       ]
     }

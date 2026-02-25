@@ -1,12 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Refresh the visual theme (colors, typography, spacing, decorative styling) across the entire website without changing any content, functionality, or structure.
+**Goal:** Add a visual, human-readable sitemap page to help developers and users navigate all sections of the site.
 
 **Planned changes:**
-- Apply a new cohesive color palette consistently across all components: Navbar, Hero, About Us, Products, Why Choose Us, Offers, Reviews, Contact, Footer, FloatingWhatsAppButton, and BasketSummary
-- Update typography system (font choices, sizes, weights, line heights) site-wide
-- Refresh spacing and decorative styling elements to match the new theme
-- Ensure mobile responsiveness and hamburger menu remain fully intact with the new styling
+- Add a `/sitemap` route that renders a visual sitemap listing all page sections: Home, Products, Offers, About, Why Choose Us, Reviews, and Contact
+- Each entry is a clickable link that smooth-scrolls to the corresponding section on the main page
+- Add a link to the sitemap in the footer navigation
 
-**User-visible outcome:** The website displays a polished, refreshed visual theme throughout all sections while all text, prices, images, links, basket functionality, and navigation remain exactly as before.
+**User-visible outcome:** Users and developers can visit `/sitemap` (linked from the footer) to see all page sections listed and click any entry to navigate directly to that section on the main page.
