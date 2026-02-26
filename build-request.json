@@ -1,36 +1,36 @@
 {
   "kind": "build_request",
-  "title": "Add Google Search Console verification meta tag",
-  "projectName": "Rama's Home Foods",
+  "title": "Add Google site verification HTML file to public directory",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "Add the Google Search Console verification meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` inside the `<head>` element of `frontend/index.html`.",
+      "text": "Add a static file named 'google38eb840a952aed49.html' to the frontend public directory (frontend/public/google38eb840a952aed49.html) so that Google Search Console can verify site ownership by accessing it at the root URL path.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "msg-latest"
         ],
         "quotes": [
-          "<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />"
+          "google-site-verification: google38eb840a952aed49.html"
         ]
       },
       "acceptanceCriteria": [
-        "The meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` is present in the `<head>` section of `frontend/index.html`.",
-        "No existing meta tags or SEO elements in `frontend/index.html` are removed or altered.",
-        "Google Search Console can successfully verify ownership of the site using this tag."
+        "File frontend/public/google38eb840a952aed49.html exists in the project",
+        "The file contains the standard Google site verification content format: 'google-site-verification: google38eb840a952aed49'",
+        "The file is served at the root path /google38eb840a952aed49.html when the site is deployed",
+        "Google Search Console can successfully fetch the file to complete ownership verification"
       ]
     }
   ],
   "constraints": [
-    "Do not remove or modify any existing meta tags, structured data, or SEO elements in frontend/index.html.",
-    "The verification tag must use the exact content value: nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0"
+    "Do not modify frontend/index.html or any immutable frontend paths",
+    "The verification file must be placed in frontend/public so it is served as a static asset at the root URL"
   ],
   "nonGoals": [
-    "Changes to robots.txt or sitemap.xml",
+    "Changing or duplicating the existing Google Search Console meta tag already present in frontend/index.html",
     "Any backend changes",
-    "Any visual or UI changes"
+    "Any other SEO or sitemap modifications"
   ],
   "imageRequirements": {
     "required": [],

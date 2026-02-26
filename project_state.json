@@ -1,32 +1,25 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "Web project with sitemap and Google Search Console verification meta tag integration.",
+  "summary": "Project with Google site verification set up. Google Search Console verification file (google38eb840a952aed49.html) added to the site.",
   "architectural_notes": [
-    "Google site verification meta tag: <meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" /> should be placed in <head>"
+    "Google site verification file google38eb840a952aed49.html added for Search Console verification"
   ],
   "known_issues": [],
   "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-add-the-google-search-console-verification-meta-tag-meta-name-google-site-verification-content-nxnhepzvmae0ar1cmkzoveexiirtvi6zdda6igoxmu0-inside-the-head-element-of-frontend-index-html",
-      "title": "Add the Google Search Console verification meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` inside the `<head>` element of `frontend/index.html`.",
+      "id": "feature-add-a-static-file-named-google38eb840a952aed49-html-to-the-frontend-public-directory-frontend-public-google38eb840a952aed49-html-so-that-google-search-console-can-verify-site-ownership-by-accessing-it-at-the-root-url-path",
+      "title": "Add a static file named 'google38eb840a952aed49.html' to the frontend public directory (frontend/public/google38eb840a952aed49.html) so that Google Search Console can verify site ownership by accessing it at the root URL path.",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
     }
   ],
-  "new_feature_requests": [
-    {
-      "id": "AR-1",
-      "summary": "Add Google Search Console verification meta tag to site head",
-      "reqIds": [],
-      "status": "pending"
-    }
-  ],
+  "new_feature_requests": [],
   "gameProjectType": "none",
-  "projectName": "Rama's Home Foods",
+  "projectName": "Add Google site verification HTML file to public directory",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

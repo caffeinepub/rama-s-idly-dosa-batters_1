@@ -1,21 +1,22 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add Google Search Console verification meta tag",
+  "title": "Add Google site verification HTML file to public directory",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Add Google Search Console verification meta tag to frontend/index.html",
+      "summary": "Add static Google site verification file to frontend public directory for Search Console ownership verification",
       "acceptanceCriteria": [
-        "The meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` is present in the `<head>` section of `frontend/index.html`.",
-        "No existing meta tags or SEO elements in `frontend/index.html` are removed or altered.",
-        "Google Search Console can successfully verify ownership of the site using this tag."
+        "File frontend/public/google38eb840a952aed49.html exists in the project",
+        "The file contains the standard Google site verification content format: 'google-site-verification: google38eb840a952aed49'",
+        "The file is served at the root path /google38eb840a952aed49.html when the site is deployed",
+        "Google Search Console can successfully fetch the file to complete ownership verification"
       ],
       "file_operations": [
         {
-          "path": "frontend/index.html",
-          "operation": "modify",
-          "description": "Add the Google Search Console verification meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` inside the `<head>` element. Insert it after existing meta tags but before the `<title>` element. Do not remove or modify any existing meta tags, structured data, or SEO elements. The verification tag must use the exact content value: nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0"
+          "path": "frontend/public/google38eb840a952aed49.html",
+          "operation": "create",
+          "description": "Create a static HTML verification file containing the text 'google-site-verification: google38eb840a952aed49.html' to enable Google Search Console to verify site ownership by accessing it at the root URL path /google38eb840a952aed49.html"
         }
       ]
     }

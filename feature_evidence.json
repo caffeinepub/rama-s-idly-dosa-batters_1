@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-the-google-search-console-verification-meta-tag-meta-name-google-site-verification-content-nxnhepzvmae0ar1cmkzoveexiirtvi6zdda6igoxmu0-inside-the-head-element-of-frontend-index-html",
-      "featureTitle": "Add the Google Search Console verification meta tag `<meta name=\"google-site-verification\" content=\"nXnhEpzvMaE0Ar1cmkZOveExIIRtVI6zDDa6IgOXmu0\" />` inside the `<head>` element of `frontend/index.html`.",
+      "featureId": "feature-add-a-static-file-named-google38eb840a952aed49-html-to-the-frontend-public-directory-frontend-public-google38eb840a952aed49-html-so-that-google-search-console-can-verify-site-ownership-by-accessing-it-at-the-root-url-path",
+      "featureTitle": "Add a static file named 'google38eb840a952aed49.html' to the frontend public directory (frontend/public/google38eb840a952aed49.html) so that Google Search Console can verify site ownership by accessing it at the root URL path.",
       "files": [
-        "frontend/index.html"
+        "frontend/public/google38eb840a952aed49.html"
       ],
       "components": [
         "core-infrastructure@1.0.2",
